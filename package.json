@@ -1,0 +1,21 @@
+{
+    "name": "sysop",
+    "displayName": "sysop",
+    "description": "color scheme from a operations guy",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "sysop",
+                "uiTheme": "vs-dark",
+                "path": "./themes/sysop-color-theme.json"
+            }
+        ]
+    }
+}
