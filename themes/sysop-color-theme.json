@@ -9,10 +9,10 @@
 		"activityBarBadge.foreground": "#0D0D0D",
 		"badge.background": "#0D0D0D30",
 		"badge.foreground": "#017D16",
-		"breadcrumb.activeSelectionForeground": "#017D16",
+		"breadcrumb.activeSelectionForeground": "#01457d",
 		"breadcrumb.background": "#0D0D0D",
 		"breadcrumb.focusForeground": "#00A6A6",
-		"breadcrumb.foreground": "#2A971B",
+		"breadcrumb.foreground": "#1b5197",
 		"breadcrumbPicker.background": "#0D0D0D",
 		"button.background": "#017D1650",
 		"contrastBorder": "#017D1640",
@@ -132,9 +132,9 @@
 		"pickerGroup.foreground": "#017D16",
 		"progressBar.background": "#017D16",
 		"scrollbar.shadow": "#0D0D0D00",
-		"scrollbarSlider.activeBackground": "#017D16cc",
-		"scrollbarSlider.background": "#017D16bb",
-		"scrollbarSlider.hoverBackground": "#017D16ee",
+		"scrollbarSlider.activeBackground": "#7108e9cc",
+		"scrollbarSlider.background": "#991cff",
+		"scrollbarSlider.hoverBackground": "#26017dee",
 		"selection.background": "#017D16",
 		"settings.checkboxBackground": "#0D0D0D",
 		"settings.checkboxForeground": "#00A6A6",
@@ -148,10 +148,10 @@
 		"settings.textInputForeground": "#00A6A6",
 		"sideBar.background": "#0D0D0D",
 		"sideBar.border": "#017D1650",
-		"sideBar.foreground": "#2FCC24",
+		"sideBar.foreground": "#4845ee",
 		"sideBarSectionHeader.background": "#0D0D0D",
 		"sideBarSectionHeader.border": "#0D0D0D60",
-		"sideBarSectionHeader.foreground": "#2FCC24",
+		"sideBarSectionHeader.foreground": "#6890fc",
 		"sideBarTitle.foreground": "#00A6A6",
 		"statusBar.background": "#031C9C",
 		"statusBar.border": "#0D0D0D60",
@@ -162,12 +162,12 @@
 		"statusBarItem.hoverBackground": "#017D1620",
 		"statusBarItem.remoteBackground": "#017D16",
 		"statusBarItem.remoteForeground": "#0D0D0D",
-		"tab.activeBackground": "#017D1650",
-		"tab.activeBorder": "#017D16",
+		"tab.activeBackground": "#37017d50",
+		"tab.activeBorder": "#7903ff",
 		"tab.activeForeground": "#00D0D9",
-		"tab.activeModifiedBorder": "#017D16",
+		"tab.activeModifiedBorder": "#010d7d",
 		"tab.border": "#0D0D0D",
-		"tab.inactiveBackground": "#017D1620",
+		"tab.inactiveBackground": "#14017d77",
 		"tab.inactiveForeground": "#00A6A6af",
 		"tab.unfocusedActiveBorder": "#017D16",
 		"tab.unfocusedActiveBackground": "#017D1640",
@@ -198,7 +198,7 @@
 		"titleBar.activeForeground": "#00A6A6",
 		"titleBar.border": "#0D0D0D60",
 		"titleBar.inactiveBackground": "#0D0D0D",
-		"titleBar.inactiveForeground": "#017D16",
+		"titleBar.inactiveForeground": "#01567d",
 		"tree.indentGuidesStroke": "#484848",
 		"widget.shadow": "#0D0D0D30",
 	},
@@ -215,7 +215,7 @@
 				"constant.other.placeholder",
 			],
 			"settings": {
-				"foreground": "#F6FF02"
+				"foreground": "#0267ff"
 				// "foreground": "#b46ef7"
 			}
 		},
@@ -378,6 +378,14 @@
 		},
 		{
 			"scope": [
+				"meta.function.definition"
+			],
+			"settings": {
+				"foreground": "#00A6A6"
+			}
+		},
+		{
+			"scope": [
 				"entity.name.tag.html"
 			],
 			"settings": {
@@ -520,7 +528,7 @@
 				"entity.other.attribute-name.html"
 			],
 			"settings": {
-				"foreground": "#F6FF02"
+				"foreground": "#00a05d"
 			}
 		},
 		{
@@ -890,6 +898,31 @@
 				"foreground": "#5353f7"
 			}
 		},
+		// Rust extras
+		{
+			"scope": [
+				"entity.name.type.struct",
+			],
+			"settings": {
+				"foreground": "#02abfa",
+			}
+		},
+		{
+			"scope": [
+				"keyword.other.fn.rust",
+				 ],
+				"settings": {
+					"foreground": "#fd5b5b"
+			},
+		},
+		{
+			"scope": [
+				"storage.modifier.mut.rust",
+			],
+			"settings": {
+				"foreground": "#ff0000"
+			}
+		},
 	],
 	"semanticTokenColors": {
 		"enum": "#ff00ea",
@@ -899,20 +932,21 @@
 		"variable.mutable": {
 			"underline": true,
 		},
-		"builtinConstant": "#fffb00",
-		"parameter": "#d3ac00",
+		"builtinConstant": "#ff1e00",
+		"builtinType": "#d400ff",
+		"parameter": "#c2ac4e",
 		"selfParameter": {
 			"foreground": "#b80d6b",
 			"italic": true
 		},
-		"property": "#6d1ffd",
+		"property": "#1b8d74",
 		"*.declaration": {
 			"bold": true
 		},
-		"keyword.controlFlow.async": "#d15f01",
-		"keyword.async": "#d15f01",
-		"keyword.controlFlow": "#d1b201",
-		"method": "#008cff",
+		"keyword.controlFlow.async": "#d101c0",
+		"keyword.async": "#ca01d1",
+		"keyword.controlFlow": "#d16601",
+		"method": "#0065b8",
 		"string": "#00b445",
 		"macro": "#0081b4"
 	}
