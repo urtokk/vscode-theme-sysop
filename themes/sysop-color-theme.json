@@ -210,10 +210,13 @@
 				"invalid.deprecated",
 				"keyword",
 				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
+				"constant.character.format.placeholder",
+				"constant.other.placeholder",
 			],
 			"settings": {
 				"foreground": "#F6FF02"
+				// "foreground": "#b46ef7"
 			}
 		},
 		{
@@ -274,6 +277,8 @@
 		{
 			"scope": [
 				"keyword.control",
+				"keyword.control.flow",
+				"keyword.control.go",
 				"constant.other.color",
 				"punctuation.definition.tag",
 				"punctuation",
@@ -285,7 +290,7 @@
 				"entity.name.tag.reference.scss"
 			],
 			"settings": {
-				"foreground": "#A7A8AF"
+				"foreground": "#05bbe9"
 			}
 		},
 		{
@@ -296,6 +301,14 @@
 			],
 			"settings": {
 				"foreground": "#2A971B"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.type.class",
+			],
+			"settings": {
+				"foreground": "#ff7b00"
 			}
 		},
 		{
@@ -338,10 +351,11 @@
 				"punctuation.definition.comment.scss",
 				"punctuation.definition.comment.js",
 				"punctuation.definition.comment.html",
-				"comment.block.html"
+				"comment.block.html",
+				"comment"
 			],
 			"settings": {
-				"foreground": "#6D6F7C"
+				"foreground": "#900ffa"
 			}
 		},
 		{
@@ -377,6 +391,15 @@
 			],
 			"settings": {
 				"foreground": "#F6FF02"
+			}
+		},
+		{
+			"scope": [
+				"variable.other.declaration"
+			],
+			"settings": {
+				"foreground": "#ae00ff",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -461,6 +484,14 @@
 		},
 		{
 			"scope": [
+				"variable.parameter.function-call"
+			],
+			"settings": {
+				"foreground": "#d3ac00"
+			}
+		},
+		{
+			"scope": [
 				"constant.other.symbol",
 				"constant.other.key",
 				"entity.other.inherited-class",
@@ -540,7 +571,7 @@
 				"support.function"
 			],
 			"settings": {
-				"foreground": "#F6FF02"
+				"foreground": "#0066db"
 			}
 		},
 		{
@@ -552,12 +583,35 @@
 				"keyword.control.conditional.js",
 				"support.constant",
 				"entity.other.attribute-name.html",
-				"string.quoted.single.js",
-				"storage.type.function.js",
 				"meta.object-literal.key"
 			],
 			"settings": {
 				"foreground": "#00A6A6"
+			}
+		},
+		{
+			"scope": [
+				"string.quoted.single",
+				"string.quoted.double"
+			],
+			"settings": {
+				"foreground": "#00b837"
+			}
+		},
+		{
+			"scope": [
+				"storage.type.function",
+			],
+			"settings": {
+				"foreground": "#d40035"
+			}
+		},
+		{
+			"scope": [
+				"storage.type.class",
+			],
+			"settings": {
+				"foreground": "#ff0022",
 			}
 		},
 		{
@@ -785,6 +839,81 @@
 			"settings": {
 				"foreground": "#02FF26"
 			}
-		}
-	]
+		},
+		{
+			"scope": [
+				"keyword.operator.comparison",
+			],
+			"settings": {
+				"foreground": "#FF293B"
+			}
+		},
+		// Golang extras
+		{
+			"scope": [
+				"keyword.var.go",
+			],
+			"settings": {
+				"foreground": "#FF293B"
+			}
+		},
+		{
+			"scope": [
+				"variable.other.assignment",
+			],
+			"settings": {
+				"foreground": "#00bb9c",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.import",
+			],
+			"settings": {
+				"foreground": "#ff9900be"
+			}
+		},
+		{
+			"scope": [
+				"keyword.package.go",
+			],
+			"settings": {
+				"foreground": "#ff0015"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.package",
+			],
+			"settings": {
+				"foreground": "#5353f7"
+			}
+		},
+	],
+	"semanticTokenColors": {
+		"enum": "#ff00ea",
+		"enumMember": "#f8568c",
+		"variable": "#00bb9c",
+		"variable.declaration": "#00bb9c",
+		"variable.mutable": {
+			"underline": true,
+		},
+		"builtinConstant": "#fffb00",
+		"parameter": "#d3ac00",
+		"selfParameter": {
+			"foreground": "#b80d6b",
+			"italic": true
+		},
+		"property": "#6d1ffd",
+		"*.declaration": {
+			"bold": true
+		},
+		"keyword.controlFlow.async": "#d15f01",
+		"keyword.async": "#d15f01",
+		"keyword.controlFlow": "#d1b201",
+		"method": "#008cff",
+		"string": "#00b445",
+		"macro": "#0081b4"
+	}
 }
