@@ -132,9 +132,9 @@
 		"pickerGroup.foreground": "#017D16",
 		"progressBar.background": "#017D16",
 		"scrollbar.shadow": "#0D0D0D00",
-		"scrollbarSlider.activeBackground": "#7108e9cc",
-		"scrollbarSlider.background": "#991cff",
-		"scrollbarSlider.hoverBackground": "#26017dee",
+		"scrollbarSlider.activeBackground": "#3e077ccc",
+		"scrollbarSlider.background": "#310d4e",
+		"scrollbarSlider.hoverBackground": "#8905aaee",
 		"selection.background": "#017D16",
 		"settings.checkboxBackground": "#0D0D0D",
 		"settings.checkboxForeground": "#00A6A6",
@@ -910,7 +910,7 @@
 		{
 			"scope": [
 				"keyword.other.fn.rust",
-				 ],
+				],
 				"settings": {
 					"foreground": "#fd5b5b"
 			},
@@ -932,7 +932,7 @@
 		"variable.mutable": {
 			"underline": true,
 		},
-		"builtinConstant": "#ff1e00",
+		"builtinConstant": "#ff1e00a9",
 		"builtinType": "#d400ff",
 		"parameter": "#c2ac4e",
 		"selfParameter": {
@@ -943,9 +943,13 @@
 		"*.declaration": {
 			"bold": true
 		},
-		"keyword.controlFlow.async": "#d101c0",
-		"keyword.async": "#ca01d1",
-		"keyword.controlFlow": "#d16601",
+		"keyword.controlFlow.async": "#d10112",
+		"keyword.async": "#d10112",
+		"keyword.controlFlow": {
+			"foreground": "#d16601",
+			"italic": true
+		},
+		"keyword.controlFlow.return": "#ff7e05",
 		"method": "#0065b8",
 		"string": "#00b445",
 		"macro": "#0081b4"

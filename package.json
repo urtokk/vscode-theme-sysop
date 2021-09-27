@@ -3,6 +3,8 @@
     "displayName": "sysop",
     "description": "color scheme from a operations guy",
     "version": "0.0.1",
+    "publisher": "urtokk",
+    "license": "SEE LICENSE IN LICENSE",
     "engines": {
         "vscode": "^1.60.0"
     },
@@ -17,5 +19,11 @@
                 "path": "./themes/sysop-color-theme.json"
             }
         ]
+    },
+    "keywords": [
+        "sysop"
+    ],
+    "scripts": {
+        "package": "vsce package"
     }
 }
