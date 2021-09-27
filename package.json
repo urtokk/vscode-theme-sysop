@@ -5,9 +5,22 @@
     "version": "0.0.1",
     "publisher": "urtokk",
     "license": "SEE LICENSE IN LICENSE",
+    "icon": "images/logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/urtokk/vscode-theme-sysop"
+    },
+    "bugs": {
+        "url": "https://github.com/urtokk/vscode-theme-sysop/issues"
+    },
     "engines": {
         "vscode": "^1.60.0"
     },
+    "galleryBanner": {
+        "color": "#101010",
+        "theme": "dark"
+    },
+    "homepage": "https://github.com/urtokk/vscode-theme-sysop/blob/master/README.md",
     "categories": [
         "Themes"
     ],
