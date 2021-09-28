@@ -34,7 +34,8 @@
         ]
     },
     "keywords": [
-        "sysop"
+        "sysop",
+        "sysoptheme"
     ],
     "scripts": {
         "package": "vsce package"
