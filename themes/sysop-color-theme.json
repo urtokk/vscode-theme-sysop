@@ -436,8 +436,6 @@
 				"keyword.other.special-method",
 				"entity.name.function",
 				"markup.bold",
-				"markup.bold.markdown",
-				"markup.italic.markdown",
 				"meta.class-method.js entity.name.function.js",
 				"variable.function.constructor",
 				"entity.name.tag.other.html",
@@ -504,7 +502,6 @@
 				"constant.other.key",
 				"entity.other.inherited-class",
 				"keyword.other.unit",
-				"markup.heading",
 				"markup.inserted.git_gutter",
 				"meta.group.braces.curly",
 				"constant.other.object.key.js",
@@ -700,7 +697,6 @@
 		{
 			"scope": [
 				"text.html.markdown",
-				"punctuation.definition.list_item.markdown"
 			],
 			"settings": {
 				"foreground": "#00A6A6"
@@ -732,8 +728,7 @@
 		{
 			"scope": [
 				"markdown.heading",
-				"markup.heading | markup.heading entity.name",
-				"markup.heading.markdown punctuation.definition.heading.markdown",
+				"punctuation.definition.heading.markdown",
 				"entity.name.section.markdown"
 			],
 			"settings": {
@@ -763,7 +758,7 @@
 				"markup.quote punctuation.definition.blockquote.markdown"
 			],
 			"settings": {
-				"foreground": "#017D1650"
+				"foreground": "#016a7d"
 			}
 		},
 		{
@@ -923,6 +918,69 @@
 				"foreground": "#ff0000"
 			}
 		},
+		// Markdown
+		{
+			"scope": [
+				"markup.heading",
+				"markup.heading entity.name.section.markdown"
+			],
+			"settings": {
+				"foreground": "#0084ff",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"markup.italic.markdown",
+			],
+			"settings": {
+				"foreground": "#b9c6ff",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"markup.bold.markdown",
+			],
+			"settings": {
+				"foreground": "#b9c6ff",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"markup.underline.markdown",
+			],
+			"settings": {
+				"foreground": "#b9c6ff",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": [
+				"punctuation.definition.list_item.markdown"
+			],
+			"settings": {
+				"foreground": "#45f1fd"
+			}
+		},
+		{
+			"scope": [
+				"markup.list.unnumbered.markdown",
+				"markup.list.numbered.markdown"
+			],
+			"settings": {
+				"foreground": "#02fce7"
+			}
+		},
+		{
+			"scope": [
+				"punctuation.definition.list.begin.markdown"
+			],
+			"settings": {
+				"foreground": "#d7fa87",
+			}
+		}
 	],
 	"semanticTokenColors": {
 		"enum": "#ff00ea",
