@@ -1,0 +1,28 @@
+on:
+  push:
+   branches:
+     - main
+jobs:
+  publish:
+   name: Release and publish
+   runs-on: ubuntu-latest
+   steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+    - name: Install dependencies
+      run: npm i
+    - name: Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: npx semantic-release
+    - name: Vscode release plugin
+      uses: JCofman/vscodeaction@master
+      env:
+        VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      with:
+        args: publish -p $VSCE_PAT
+
