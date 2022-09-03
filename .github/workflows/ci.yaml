@@ -23,6 +23,7 @@ jobs:
       uses: JCofman/vscodeaction@master
       env:
         VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         args: publish -p $VSCE_PAT
 
