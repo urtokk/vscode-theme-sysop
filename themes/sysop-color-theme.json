@@ -241,7 +241,7 @@
 				"constant.other.php"
 			],
 			"settings": {
-				"foreground": "#F6FF02"
+				"foreground": "#ffd502"
 			}
 		},
 		{
@@ -472,7 +472,7 @@
 				"punctuation.separator.key-value.html"
 			],
 			"settings": {
-				"foreground": "#F6FF02"
+				"foreground": "#ffcc02cf"
 			}
 		},
 		{
