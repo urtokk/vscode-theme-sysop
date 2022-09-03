@@ -42,7 +42,7 @@
         "package": "vsce package"
     },
     "release": {
-        "branches": "master",
+        "branches": "main",
         "verifyConditions": [
             "@semantic-release/github"
         ],
